@@ -8,6 +8,7 @@ export default function Posts({
     return (
         <>
             <h1>Posts</h1>
+            <div className={postsContainer}>
             {
                 posts.map(post => (
                     <Link to={`/post/${post.id}`} className={linkStyle} key={post.id}>
@@ -18,6 +19,7 @@ export default function Posts({
                     </Link>
                 ))
             }
+            </div>
         </>
     )
 }
@@ -31,11 +33,18 @@ const linkStyle = css`
   text-decoration: none;
 `
 
+const postsContainer = css`
+    display: flex;
+    justify-content: space-between;
+`;
+
 const postContainer = css`
   border-radius: 10px;
   padding: 1px 20px;
   border: 1px solid #ddd;
   margin-bottom: 20px;
+  min-width: 30%;
+  margin: 5px;
   :hover {
     border-color: #0070f3;
   }

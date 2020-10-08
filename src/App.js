@@ -142,7 +142,7 @@ function Router() {
                   </Route>
                 </Switch>
               </div>
-              <AmplifySignOut />
+              <AmplifySignOut className={signOutStyle} />
             </HashRouter>
         ) }
         { showOverlay && (
@@ -155,6 +155,10 @@ function Router() {
       </>
   );
 }
+
+const signOutStyle = css`
+  background-color: hotpink;
+`;
 
 const dividerStyle = css`
   margin-top: 15px;
