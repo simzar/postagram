@@ -35,7 +35,8 @@ const linkStyle = css`
 
 const postsContainer = css`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 `;
 
 const postContainer = css`
