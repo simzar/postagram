@@ -62,7 +62,7 @@
       <workItem from="1602087601624" duration="989000" />
       <workItem from="1602090309229" duration="3913000" />
       <workItem from="1602138747980" duration="12000" />
-      <workItem from="1602165506507" duration="4467000" />
+      <workItem from="1602165506507" duration="5736000" />
     </task>
     <task id="LOCAL-00001" summary="Add different kind of auth, another route for 'my own' posts">
       <created>1602169279348</created>
@@ -71,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602169279348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Play around with custom auth to have control over all the UI elements">
+      <created>1602170694996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602170694996</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,13 +98,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add different kind of auth, another route for 'my own' posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add different kind of auth, another route for 'my own' posts" />
+    <MESSAGE value="Play around with custom auth to have control over all the UI elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Play around with custom auth to have control over all the UI elements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2367" y="305" key="SettingsEditor" timestamp="1602167197440">
       <screen x="1920" y="120" width="1920" height="1080" />
     </state>
     <state x="2367" y="305" key="SettingsEditor/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602167197440" />
+    <state x="2508" y="408" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1602170701494">
+      <screen x="1920" y="120" width="1920" height="1080" />
+    </state>
+    <state x="2508" y="408" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602170701494" />
     <state x="2604" y="411" width="618" height="522" key="find.popup" timestamp="1602168656023">
       <screen x="1920" y="120" width="1920" height="1080" />
     </state>

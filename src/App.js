@@ -12,7 +12,8 @@ import CreatePost from './components/CreatePost';
 import Button from './components/Button';
 
 const initialState = {
-  formState: 'signUp',
+  // formState: 'signUp',
+  formState: 'signedIn',
   username: '',
   password: '',
   email: '',
@@ -53,81 +54,80 @@ function Router() {
   }
 
   // further playing with custom auth
-  const { formState, authCode, email, password, username } = state;
-  const onChange = (e) => {
-    e.persist();
-    setState(() => ({ ...state, [e.target.name]: e.target.value }))
-  }
-
-  const signUp = async () => {
-    try {
-      await Auth.signUp({ username, password, attributes: { email } });
-      setState({ ...state, formState: 'confirmSignUp' });
-    } catch (e) {
-      console.error('uh oh: ', e);
-    }
-  };
-
-  const confirmSignUp = async () => {
-    try {
-      await Auth.confirmSignUp(username, authCode);
-      setState({ ...state, formState: 'signIn' });
-    } catch (e) {
-      console.error('uh oh: ', e);
-    }
-  };
-
-  const signIn = async () => {
-    try {
-      await Auth.signIn(username, password);
-      setState({ ...state, formState: 'signedIn' });
-    } catch (e) {
-      console.error('uh oh: ', e);
-    }
-  };
-
-  const signOut = async () => {
-    try {
-      await Auth.signOut();
-      setState({ ...state, formState: 'signIn' });
-    } catch (e) {
-      console.error('uh oh: ', e);
-    }
-  };
-
-  console.log(state);
+  // const { formState, authCode, email, password, username } = state;
+  const { formState } = state;
+  // const onChange = (e) => {
+  //   e.persist();
+  //   setState(() => ({ ...state, [e.target.name]: e.target.value }))
+  // }
+  //
+  // const signUp = async () => {
+  //   try {
+  //     await Auth.signUp({ username, password, attributes: { email } });
+  //     setState({ ...state, formState: 'confirmSignUp' });
+  //   } catch (e) {
+  //     console.error('uh oh: ', e);
+  //   }
+  // };
+  //
+  // const confirmSignUp = async () => {
+  //   try {
+  //     await Auth.confirmSignUp(username, authCode);
+  //     setState({ ...state, formState: 'signIn' });
+  //   } catch (e) {
+  //     console.error('uh oh: ', e);
+  //   }
+  // };
+  //
+  // const signIn = async () => {
+  //   try {
+  //     await Auth.signIn(username, password);
+  //     setState({ ...state, formState: 'signedIn' });
+  //   } catch (e) {
+  //     console.error('uh oh: ', e);
+  //   }
+  // };
+  //
+  // const signOut = async () => {
+  //   try {
+  //     await Auth.signOut();
+  //     setState({ ...state, formState: 'signIn' });
+  //   } catch (e) {
+  //     console.error('uh oh: ', e);
+  //   }
+  // };
 
   return (
       <>
-        { formState === 'signUp' && (
-            <div>
-              <input name="username" placeholder="Username" onChange={onChange} />
-              <input name="password" placeholder="Password" type="password" onChange={onChange} />
-              <input name="email" placeholder="Email" type="email" onChange={onChange} />
-              <button onClick={signUp}>Sign Up</button>
-              <button onClick={() => setState({...state, formState: 'signIn'})}>Sign In</button>
-            </div>
-        ) }
-        { formState === 'confirmSignUp' && (
-            <div>
-              <input name="username" value={username} disabled />
-              <input name="authCode" placeholder="Auth Code" onChange={onChange} />
-              <button onClick={confirmSignUp}>Confirm Sign Up</button>
-            </div>
-        ) }
-        { formState === 'signIn' && (
-            <div>
-              <input name="username" placeholder="Username" onChange={onChange} />
-              <input name="password" placeholder="Password" type="password" onChange={onChange} />
-              <button onClick={() => setState({...state, formState: 'signUp'})}>Sign Up</button>
-              <button onClick={signIn}>Sign In</button>
-            </div>
-        ) }
+        {/*{ formState === 'signUp' && (*/}
+        {/*    <div>*/}
+        {/*      <input name="username" placeholder="Username" onChange={onChange} />*/}
+        {/*      <input name="password" placeholder="Password" type="password" onChange={onChange} />*/}
+        {/*      <input name="email" placeholder="Email" type="email" onChange={onChange} />*/}
+        {/*      <button onClick={signUp}>Sign Up</button>*/}
+        {/*      <button onClick={() => setState({...state, formState: 'signIn'})}>Sign In</button>*/}
+        {/*    </div>*/}
+        {/*) }*/}
+        {/*{ formState === 'confirmSignUp' && (*/}
+        {/*    <div>*/}
+        {/*      <input name="username" value={username} disabled />*/}
+        {/*      <input name="authCode" placeholder="Auth Code" onChange={onChange} />*/}
+        {/*      <button onClick={confirmSignUp}>Confirm Sign Up</button>*/}
+        {/*    </div>*/}
+        {/*) }*/}
+        {/*{ formState === 'signIn' && (*/}
+        {/*    <div>*/}
+        {/*      <input name="username" placeholder="Username" onChange={onChange} />*/}
+        {/*      <input name="password" placeholder="Password" type="password" onChange={onChange} />*/}
+        {/*      <button onClick={() => setState({...state, formState: 'signUp'})}>Sign Up</button>*/}
+        {/*      <button onClick={signIn}>Sign In</button>*/}
+        {/*    </div>*/}
+        {/*) }*/}
         { formState === 'signedIn' && (
             <HashRouter>
               <div className={contentStyle}>
                 <Header />
-                <button onClick={signOut}>Sign Out</button>
+                {/*<button onClick={signOut}>Sign Out</button>*/}
                 <hr className={dividerStyle} />
                 <Button title="New Post" onClick={() => updateOverlayVisibility(true)} />
                 <Switch>
@@ -165,5 +165,5 @@ const contentStyle = css`
   padding: 0px 40px;
 `
 
-// export default withAuthenticator(Router);
-export default Router;
+export default withAuthenticator(Router);
+// export default Router;
