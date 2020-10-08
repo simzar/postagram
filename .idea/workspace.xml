@@ -12,17 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="01269923-fb73-4ec9-929b-46e2d06d9e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/postagram/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/postagram/parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/api/postagram/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/postagram/schema.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreatePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreatePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +62,16 @@
       <workItem from="1602087601624" duration="989000" />
       <workItem from="1602090309229" duration="3913000" />
       <workItem from="1602138747980" duration="12000" />
-      <workItem from="1602165506507" duration="3113000" />
+      <workItem from="1602165506507" duration="4467000" />
     </task>
+    <task id="LOCAL-00001" summary="Add different kind of auth, another route for 'my own' posts">
+      <created>1602169279348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602169279348</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,9 +102,9 @@
       <screen x="1920" y="120" width="1920" height="1080" />
     </state>
     <state x="2604" y="411" width="618" height="522" key="find.popup/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602168656023" />
-    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup" timestamp="1602168914504">
+    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup" timestamp="1602169284610">
       <screen x="1920" y="120" width="1920" height="1080" />
     </state>
-    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602168914504" />
+    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602169284610" />
   </component>
 </project>
