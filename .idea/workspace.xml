@@ -13,6 +13,7 @@
     <list default="true" id="01269923-fb73-4ec9-929b-46e2d06d9e12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -62,7 +64,7 @@
       <workItem from="1602087601624" duration="989000" />
       <workItem from="1602090309229" duration="3913000" />
       <workItem from="1602138747980" duration="12000" />
-      <workItem from="1602165506507" duration="5736000" />
+      <workItem from="1602165506507" duration="7010000" />
     </task>
     <task id="LOCAL-00001" summary="Add different kind of auth, another route for 'my own' posts">
       <created>1602169279348</created>
@@ -78,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602170694996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Comment out all the playing around with auth part">
+      <created>1602172541693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602172541693</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,7 +108,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add different kind of auth, another route for 'my own' posts" />
     <MESSAGE value="Play around with custom auth to have control over all the UI elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Play around with custom auth to have control over all the UI elements" />
+    <MESSAGE value="Comment out all the playing around with auth part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment out all the playing around with auth part" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2367" y="305" key="SettingsEditor" timestamp="1602167197440">
@@ -114,9 +124,9 @@
       <screen x="1920" y="120" width="1920" height="1080" />
     </state>
     <state x="2604" y="411" width="618" height="522" key="find.popup/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602168656023" />
-    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup" timestamp="1602169284610">
+    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup" timestamp="1602173576565">
       <screen x="1920" y="120" width="1920" height="1080" />
     </state>
-    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602169284610" />
+    <state x="2576" y="377" width="672" height="678" key="search.everywhere.popup/1920.120.1920.1080/67.147.1853.1053@1920.120.1920.1080" timestamp="1602173576565" />
   </component>
 </project>
