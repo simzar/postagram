@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { css } from 'emotion';
-import { useParams } from 'react-router-dom';
-import { API, Storage } from 'aws-amplify';
-import { getPost } from '../graphql/queries';
+import React, {useEffect, useState} from 'react'
+import {css} from 'emotion';
+import {useParams} from 'react-router-dom';
+import {API, Storage} from 'aws-amplify';
+import {getPost} from '../graphql/queries';
 
 export default function Post() {
     const [loading, updateLoading] = useState(true);
@@ -16,10 +16,17 @@ export default function Post() {
             const postData = await API.graphql({
                 query: getPost, variables: { id }
             });
-            const currentPost = postData.data.getPost
-            const image = await Storage.get(currentPost.image);
 
-            currentPost.image = image;
+            // const postData = await API.graphql({
+            //     mutation: createPost,
+            //     authMode: 'AMAZON_COGNITO_USER_POOLS',
+            //     variables: {
+            //         input: postInfo
+            //     }
+            // });
+
+            const currentPost = postData.data.getPost
+            currentPost.image = await Storage.get(currentPost.image);
             updatePost(currentPost);
             updateLoading(false);
         } catch (err) {
